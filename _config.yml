@@ -1,3 +1,7 @@
 theme: jekyll-theme-minimal
 title: Ashley's homepage
 description: Bookmark this to keep an eye on my project updates!
+name: Your Site Name
+markdown: kramdown
+permalink: /blog/2025/01/19/homepage
+index: index.md
