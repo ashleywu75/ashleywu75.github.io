@@ -1,0 +1,100 @@
+@import "{{ site.theme }}";
+
+// LaTeX-style typography
+.post {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Computer Modern Serif", Georgia, Times, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.post-title {
+  color: #000;
+  font-size: 2.2em;
+  margin: 30px 0 20px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.post-meta {
+  color: #666;
+  font-size: 0.9em;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+  margin-bottom: 100px;  // Increased spacing here
+
+  time {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .categories {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+.post-content {
+  // Remove margin-top since we're using margin-bottom on post-meta
+  p:first-child {
+    margin-top: 0;  // Remove top margin from first paragraph
+  }
+
+  h2 {
+    font-size: 1.6em;
+    margin: 40px 0 20px;
+    font-weight: normal;
+  }
+
+  h3 {
+    font-size: 1.3em;
+    margin: 30px 0 15px;
+    font-weight: normal;
+  }
+
+  p {
+    margin-bottom: 1.2em;
+    text-indent: 2em;
+  }
+
+  h1 + p, h2 + p, h3 + p {
+    text-indent: 0;
+  }
+
+  pre {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #f8f8f8;
+    overflow-x: auto;
+    font-family: "Computer Modern Typewriter", Consolas, monospace;
+  }
+
+  blockquote {
+    margin: 1em 2em;
+    font-style: italic;
+    border: none;
+    padding: 0;
+  }
+
+  ul, ol {
+    margin-left: 2em;
+    margin-bottom: 1.2em;
+  }
+}
+
+// LaTeX-style links
+a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px dotted #666;
+  
+  &:hover {
+    border-bottom: 1px solid #000;
+  }
+}

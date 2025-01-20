@@ -11,7 +11,7 @@ Here you'll find my notes and insights about programming, machine learning, and 
 
 <article class="post-preview featured">
   <h2>
-    <a href="/introduction-to-monte-carlo-tree-search">Understanding Monte Carlo Tree Search (MCTS)</a>
+    <a href="/2024/03/21/introduction-to-monte-carlo-tree-search/">Understanding Monte Carlo Tree Search (MCTS)</a>
   </h2>
   <p>An in-depth exploration of Monte Carlo Tree Search, its applications, and implementation details. Learn about this powerful decision-making algorithm used in AI systems like AlphaGo.</p>
   <span class="categories">
@@ -21,21 +21,24 @@ Here you'll find my notes and insights about programming, machine learning, and 
 
 ## Latest Articles
 
+{% assign featured_url = "/2024/03/21/introduction-to-monte-carlo-tree-search/" %}
 {% for post in site.posts %}
-  <article class="post-preview">
-    <h2>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <time datetime="{{ post.date | date_to_xmlschema }}">
-      {{ post.date | date: "%B %d, %Y" }}
-    </time>
-    {% if post.categories %}
-    <span class="categories">
-      Categories: {{ post.categories | join: ", " }}
-    </span>
-    {% endif %}
-    {% if post.description %}
-    <p>{{ post.description }}</p>
-    {% endif %}
-  </article>
+  {% if post.url != featured_url %}
+    <article class="post-preview">
+      <h2>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%B %d, %Y" }}
+      </time>
+      {% if post.categories %}
+      <span class="categories">
+        Categories: {{ post.categories | join: ", " }}
+      </span>
+      {% endif %}
+      {% if post.description %}
+      <p>{{ post.description }}</p>
+      {% endif %}
+    </article>
+  {% endif %}
 {% endfor %}

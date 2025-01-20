@@ -3,5 +3,42 @@ title: Ashley's homepage
 description: Bookmark this to keep an eye on my project updates!
 name: Your Site Name
 markdown: kramdown
-permalink: /blog/2025/01/19/homepage
+
+# Build settings
+baseurl: ""
+url: ""
+
+# Default permalink structure
+permalink: /:year/:month/:day/:title/
+
+# Theme settings
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
 index: index.md
+disqus:
+  shortname: your-disqus-shortname
+
+# Add to your existing config
+include:
+  - _includes

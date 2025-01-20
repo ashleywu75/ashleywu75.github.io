@@ -1,0 +1,28 @@
+.post {
+  margin: 2em 0;
+}
+
+.post-header {
+  margin-bottom: 2em;
+}
+
+.post-title {
+  margin-bottom: 0.5em;
+}
+
+.post-meta {
+  color: #666;
+  margin-bottom: 1em;
+}
+
+.post-content {
+  margin-top: 2em;
+}
+
+.post-content h2 {
+  margin-top: 1.5em;
+}
+
+.post-content h3 {
+  margin-top: 1.2em;
+} 

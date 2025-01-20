@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4001/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4001/" rel="alternate" type="text/html" /><updated>2025-01-19T19:17:33-05:00</updated><id>http://localhost:4001/feed.xml</id><title type="html">Ashley’s homepage</title><subtitle>Bookmark this to keep an eye on my project updates!</subtitle><entry><title type="html">Understanding Monte Carlo Tree Search (MCTS): A Powerful Decision-Making Algorithm</title><link href="http://localhost:4001/2024/03/21/introduction-to-monte-carlo-tree-search/" rel="alternate" type="text/html" title="Understanding Monte Carlo Tree Search (MCTS): A Powerful Decision-Making Algorithm" /><published>2024-03-21T00:00:00-04:00</published><updated>2024-03-21T00:00:00-04:00</updated><id>http://localhost:4001/2024/03/21/introduction-to-monte-carlo-tree-search</id><content type="html" xml:base="http://localhost:4001/2024/03/21/introduction-to-monte-carlo-tree-search/"><![CDATA[<p>Monte Carlo Tree Search (MCTS) is a powerful algorithm for decision making, particularly famous for its crucial role in breakthrough AI systems like AlphaGo. Let’s dive into what makes MCTS so effective and how it works.</p>
+
+<h2 id="what-is-mcts">What is MCTS?</h2>
+
+<p>MCTS is a heuristic search algorithm that combines the precision of tree search with the power of random sampling. It’s particularly effective in scenarios where:</p>
+<ul>
+  <li>The search space is too large for traditional search methods</li>
+  <li>It’s difficult to create a strong evaluation function</li>
+  <li>You need to make decisions with limited computational resources</li>
+</ul>
+
+<p>[rest of content…]</p>]]></content><author><name></name></author><category term="Algorithms" /><category term="AI" /><category term="Game Theory" /><summary type="html"><![CDATA[An in-depth exploration of Monte Carlo Tree Search, its applications, and implementation details]]></summary></entry></feed>
